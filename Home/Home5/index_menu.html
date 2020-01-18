@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        div{
+            text-align: center;
+            border-radius: 5px;
+            background-color: lightgrey;
+            border: 1px solid black;
+            width: 100px;
+            height: 1.5em;
+            display:inline-block;
+            margin-bottom: 3px;
+        }
+        div:hover {
+            background-color: darkgrey;
+        }
+
+         div:hover ul {
+            display: block; /* При выделении пункта курсором мыши отображается подменю */
+
+        }
+        ul {
+            background-color: lightgrey;
+            width: 102px; /* Ширина меню */
+            list-style: none; /* Для списка убираем маркеры */
+            margin: 0; /* Нет отступов вокруг */
+            padding: 0; /* Убираем поля вокруг текста */
+            position: absolute; /* Подменю позиционируются абсолютно */
+            display: none; /* Скрываем подменю */
+            margin-left: 0px; /* Сдвигаем подменю вправо */
+            margin-top: 1.6em; /* Сдвигаем подменю вверх */
+        }
+        @media all and (max-width: 650px){
+            ul{
+                margin-left: 102px; /* Сдвигаем подменю вправо */
+                margin-top: 0px; /* Сдвигаем подменю вверх */
+            }
+            div{
+                display:block;
+            }
+
+        }
+        li {
+
+            display: block;  /*Ссылка как блочный элемент */
+            padding: 5px; /* Поля вокруг надписи */
+            text-decoration: none; /* Подчеркивание у ссылок убираем */
+            border: 1px solid black;/* Рамка вокруг пунктов меню */
+            border-bottom: none; /* Границу снизу не проводим */
+            border-radius: 5px;
+        }
+        li:hover {
+            color: #ffe; /* Цвет текста активного пункта */
+            background-color: #5488af; /* Цвет фона активного пункта */
+        }
+      .brd {
+            border-bottom: 1px solid black; /* Линия снизу */
+        }
+    </style>
+</head>
+<body>
+<div>
+    <ul>
+        <li>Завтрак</li>
+        <li>Обед</li>
+        <li class="brd">Ужин</li>
+    </ul>
+    Понедельник
+</div>
+<div>
+    <ul>
+        <li>Завтрак</li>
+        <li>Обед</li>
+        <li class="brd">Ужин</li>
+    </ul>
+
+    Вторник
+</div>
+<div>
+    <ul>
+        <li>Завтрак</li>
+        <li>Обед</li>
+        <li class="brd">Ужин</li>
+    </ul>
+
+    Среда
+</div>
+<div>
+    <ul>
+        <li>Завтрак</li>
+        <li>Обед</li>
+        <li class="brd">Ужин</li>
+    </ul>
+
+    Четверг
+</div>
+<div>
+    <ul>
+        <li>Завтрак</li>
+        <li>Обед</li>
+        <li class="brd">Ужин</li>
+    </ul>
+
+    Пятница
+</div>
+<div>
+    <ul>
+        <li>Завтрак</li>
+        <li>Обед</li>
+        <li class="brd">Ужин</li>
+    </ul>
+
+    Суббота
+</div>
+</body>
+</html>

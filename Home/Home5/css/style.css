@@ -1,0 +1,33 @@
+li{
+    list-style: none;
+}
+p a[href$=Doc]::before{
+    content: url("../pic/logo-doc.jpg");
+}
+a[href$=pdf][target="_blank"]::before{
+    content: url("../pic/logo-pdf.png");
+}
+a[href$=zip][target="_blank"]::before{
+    content: url("../pic/logo-zip.gif");
+}
+p a[href$=zip][href^="files"]::after{
+    content: url("../pic/logo-zip.gif");
+}
+p a[href$=pdf][href^="files"]::after{
+    content: url("../pic/logo-pdf.png");
+}
+p a[href$=doc][href^="files"]::after{
+    content: url("../pic/logo-doc.jpg");
+}
+li::before{
+      content: url("../pic/logo-list.jpg");
+}
+li a[href$=doc]:hover::after{
+    content: url("../pic/logo-doc.jpg");
+}
+li a[href$=pdf]:hover::after{
+    content: url("../pic/logo-pdf.png");
+}
+li a[href$=zip]:hover::after{
+    content: url("../pic/logo-zip.gif");
+}

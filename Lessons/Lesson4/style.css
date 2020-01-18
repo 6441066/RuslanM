@@ -1,0 +1,24 @@
+Body{
+height: 100000px;
+}
+div{
+    max-width: 500;
+    background-color: aquamarine;
+    height: 500px;
+    background-image: url("img/car.png"),url("img/car2.jpg");
+    background-position: 83px bottom;
+    /*background:, ;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    background-color: transparent;
+}
+P{
+    display: flex;
+    float: left;
+}
+img{
+    float: left;
+}

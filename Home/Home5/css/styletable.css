@@ -1,0 +1,20 @@
+tr:first-child{
+    background-color: grey;
+    color: white;
+}
+tr:nth-child(2n){
+    background-color: whitesmoke;
+}
+tr:nth-child(2n+1){
+    background-color: lightgrey;
+}
+th:first-child{
+    text-align: left;
+}
+tr:not(:first-child):hover{
+    color: blue;
+    cursor: pointer;
+}
+caption{
+    caption-side: bottom;
+}

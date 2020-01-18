@@ -1,0 +1,14 @@
+div{
+    padding:20px;
+    margin: 20px;
+    /*border-style: solid;*/
+    /*border-width: 3px;*/
+    /*border-color: rgba(0,0,0,0.5);*/
+    border: 3px solid red;
+    border-top: blue dotted 10px;
+    border-top-color: greenyellow;
+}
+table{
+    border-collapse: collapse;
+    border: 3px solid red;
+}
